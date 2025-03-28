@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>WasteFood ManagementSystem</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,300;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header1">
+    <nav>
+        <a href="index.html"><img src="mainlogo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hide-menu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="SignIn.html">Login</a></li>
+                <li><a href="SignUp.html">Sign up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show-menu()"></i>
+    </nav>
+    <h1>SIGN UP</h1>
+        <div class="row">
+<div class="contact-col1">
+            <form action="insert.php" method="post">
+                <input type="text" name="fname" placeholder="First name" required><br>
+                <input type="text" name="lname" placeholder="Last name" required><br>
+                <input type="text" name="uname" placeholder="User name" required><br>
+                <input type="Email" name="email" placeholder="Email address" required><br>
+                <input type="password" name="createpassword" placeholder="Create password" required><br>
+                <input type="password" name="conformpassword" placeholder="Conform password" required><br>
+                <button type="submit" class="btn2 red-btn2" name="submit" >SIGN UP</button><br><br>
+            </form>
+     <li><a href="SignIn.html">Navigate to Login page(Have an account?)</a></li>
+</div>
+    </div>
+</section>
+<script>
+    var navLinks = document.getElementaryById("navLinks");
+    function show-menu(){
+    navLinks.style.right="0";
+    }
+    function hide-menu(){
+    navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

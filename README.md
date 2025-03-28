@@ -1,1 +1,1 @@
-# Efficient-and-Intuitive-Food-Ordering-Website-using-Django
+# WasteFoodManagement-website

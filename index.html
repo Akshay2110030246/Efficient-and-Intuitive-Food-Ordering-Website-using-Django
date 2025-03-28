@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Waste Food Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,300;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="mainlogo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hide()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="SignIn.html">Login</a></li>
+                <li><a href="SignUp.html">Sign up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>WASTE FOOD MANAGEMENT SYSTEM</h1>
+        <p>Waste food management system is very good web application,
+        Anyone who wants you help poor(or)needy people can order food
+        through<br>this application at cheap cost to help them.</p>
+        <a href="" class="btn1">Visit Us To Know More</a>
+    </div>
+</section>
+<!---------javaScript for Toggle menu----------------->
+<script>
+ var navLinks= document.getElementaryById("navLinks");
+    function show(){
+    navLinks.style.right="0px";
+    }
+    function hide(){
+    navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
